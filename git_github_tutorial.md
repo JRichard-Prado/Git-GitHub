@@ -9,3 +9,7 @@ $ git config --global user.name "JRichard-Prado"
 $ git config --global user.email "jrichip@hotmail.com"
 ```  
 > Comprobando tu Configuración  `git config --list` 
+
+
+
+prueba
