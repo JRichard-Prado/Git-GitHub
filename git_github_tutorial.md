@@ -66,10 +66,15 @@ drwxr-xr-x 1 User 197121 0 mar. 16 11:57 ./
 drwxr-xr-x 1 User 197121 0 mar. 16 11:52 ../
 drwxr-xr-x 1 User 197121 0 mar. 16 11:57 .git/
 ~~~
+> Reviando el estado `git status`  
+~~~ bash
+On branch main
 
+No commits yet
 
-
-> Si deseas empezar a controlar versiones de archivos existentes debes hacer una confirmación inicial `git add` y `git commit`
+nothing to commit (create/copy files and use "git add" to track)
+~~~
+2. Si deseas empezar a controlar versiones de archivos existentes debes hacer una confirmación inicial `git add` y `git commit`
 ## **Ejemplo:**  
 
 * Creamos un markdown `touch ejemplo.md` luego revisamos el estado 
