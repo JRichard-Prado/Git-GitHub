@@ -66,7 +66,7 @@ drwxr-xr-x 1 User 197121 0 mar. 16 11:57 ./
 drwxr-xr-x 1 User 197121 0 mar. 16 11:52 ../
 drwxr-xr-x 1 User 197121 0 mar. 16 11:57 .git/
 ~~~
-> Reviando el estado `git status`  
+> Revisando el estado `git status` ya tendriamos listo el git en local 
 ~~~ bash
 On branch main
 
@@ -111,7 +111,7 @@ Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   ejemplo.md
 ~~~  
-* Finalmente levar a **.Git-Repository** `git commit -m 'ejemplo git'` y vericamos el estado  
+* guardar a **Git-Repository** `git commit -m 'ejemplo git'` y vericamos el estado  
 ~~~bash
 $ git commit -m 'ejemplo git'
 [main 651f3a5] ejemplo git
@@ -134,7 +134,12 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
-
+* para ver toos los commit `git log --oneline`  
+~~~bash
+cabe7f8 (HEAD -> main, origin/main) status git inicial
+6a28302 edit ortografia
+2bd2314 ejemplo git init
+~~~
 ## Clonando un repositorio existente  
 
 * Con una conexion ssh `git clone git@github.com:JRichard-Prado/Git-GitHub.git git_test`
