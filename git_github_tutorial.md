@@ -47,7 +47,66 @@ $ git config --global user.email "jrichip@hotmail.com"
 
 1. Inicializando un repositorio en un directorio existente `git init`
 
-> Si deseas empezar a controlar versiones de archivos existentes debes hacer una confirmación inicial `git add` y `git commit`  
+> Si deseas empezar a controlar versiones de archivos existentes debes hacer una confirmación inicial `git add` y `git commit`
+## **Ejemplo**  
+
+* Creamos un markdown `touch ejemplo.md` luego revisamos el estado 
+~~~ bash
+$ git status -s
+?? ejemplo.md
+~~~ 
+~~~ bash
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ejemplo.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+~~~ 
+
+* Pasar a **Staging Area** `git add ejemplo.md` y revisar estado  
+~~~
+$ git status -s
+A  ejemplo.md
+~~~
+~~~
+$ git add ejemplo.md
+
+User@DESKTOP-7S8SE4N MINGW64 ~/Documents/GitHub/Git-GitHub (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ejemplo.md
+~~~  
+* Finalmente levar a **.Git-Repository** `git commit -m 'ejemplo git'` y vericamos el estado  
+~~~bash
+$ git commit -m 'ejemplo git'
+[main 651f3a5] ejemplo git
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ejemplo.md
+
+$ git status -s
+ M git_github_tutorial.md
+~~~  
+~~~bash
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git_github_tutorial.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+~~~
 
 ## Clonando un repositorio existente  
 
