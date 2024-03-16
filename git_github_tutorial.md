@@ -134,12 +134,38 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
-* para ver toos los commit `git log --oneline`  
+* para ver toos los commit `git log --oneline` ó `git log`
 ~~~bash
-cabe7f8 (HEAD -> main, origin/main) status git inicial
+36cd6f0 (HEAD -> main, origin/main) git log
+cabe7f8 status git inicial
 6a28302 edit ortografia
 2bd2314 ejemplo git init
-~~~
+~~~  
+~~~bash
+Author: JRichard-Prado <jrichip@hotmail.com>
+Date:   Sat Mar 16 20:40:12 2024 +0100
+
+Date:   Sat Mar 16 20:40:12 2024 +0100
+
+    git log
+
+commit cabe7f8792e0b0eeafd634533064a4278cb26e9b
+Author: JRichard-Prado <jrichip@hotmail.com>
+Date:   Sat Mar 16 12:16:22 2024 +0100
+
+    status git inicial
+~~~  
+  - Navegando dentro del log `git reset --hard cabe7f8` 
+  ~~~bash
+  HEAD is now at cabe7f8 status git inicial
+  ~~~  
+  ~~~ bash
+  $ git log --oneline
+    cabe7f8 (HEAD -> main) status git inicial
+    6a28302 edit ortografia
+    2bd2314 ejemplo git init
+    a1e7c27 ejemplo git
+  ~~~
 ## Clonando un repositorio existente  
 
 * Con una conexion ssh `git clone git@github.com:JRichard-Prado/Git-GitHub.git git_test`
