@@ -45,10 +45,32 @@ $ git config --global user.email "jrichip@hotmail.com"
 
 ## Obteniendo un repositorio Git
 
-1. Inicializando un repositorio en un directorio existente `git init`
+1. Inicializando un repositorio en un directorio existente `git init` Esto crea un subdirectorio nuevo llamado .git
+
+## Ejemplo:  
+* crear un directorio nuevo `mkdir ejemplo_git_init` leugo ingresar dentro `cd ejemplo_git_init/` verificar el contenido con `ls -la`  
+~~~bash
+total 4
+drwxr-xr-x 1 User 197121 0 mar. 16 11:52 ./
+drwxr-xr-x 1 User 197121 0 mar. 16 11:52 ../
+~~~  
+inicializando el repositorio git `git init` y verificar el directorio .git `ls -la`  
+~~~bash
+$ git init
+Initialized empty Git repository in C:/Users/User/Documents/GitHub/ejemplo_git_init/.git/
+~~~  
+~~~bash
+$ ls -la
+total 8
+drwxr-xr-x 1 User 197121 0 mar. 16 11:57 ./
+drwxr-xr-x 1 User 197121 0 mar. 16 11:52 ../
+drwxr-xr-x 1 User 197121 0 mar. 16 11:57 .git/
+~~~
+
+
 
 > Si deseas empezar a controlar versiones de archivos existentes debes hacer una confirmación inicial `git add` y `git commit`
-## **Ejemplo**  
+## **Ejemplo:**  
 
 * Creamos un markdown `touch ejemplo.md` luego revisamos el estado 
 ~~~ bash
