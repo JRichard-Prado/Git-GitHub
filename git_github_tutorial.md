@@ -166,13 +166,49 @@ Date:   Sat Mar 16 12:16:22 2024 +0100
     2bd2314 ejemplo git init
     a1e7c27 ejemplo git
   ~~~
-## Clonando un repositorio existente  
+## Deshacer Cosas 
+- si confirmas y luego te das cuenta que olvidaste preparar los cambios de un archivo.
 
-* Con una conexion ssh `git clone git@github.com:JRichard-Prado/Git-GitHub.git git_test`
+  ~~~ bash
+  $ git commit -m 'initial commit'
+  $ git add forgotten_file
+  $ git commit --amend
+  ~~~
+## Trabajar con Remotos - Clonando un repositorio existente  
+  - **Ver los remotos** que tienes configurados
+    ~~~ bash
+    Prado@DESKTOP-72MFJHI MINGW64 ~/Desktop/Angular/Angular (main)
+    $ git remote
+    origin
+    ~~~
+    ~~~ bash
+    $ git remote -v show
+    origin  https://github.com/JRichard-Prado/Git-GitHub.git (fetch)
+    origin  https://github.com/JRichard-Prado/Git-GitHub.git (push)
+    ~~~
+- **Añadir Repositorios** Remotos
+
+  ~~~ bash
+  git remote add origin https://github.com/JRichard-Prado/Angular.git
+  ~~~
+- **Eliminar y Renombrar Remotos**
+
+  ~~~ bash
+  $ git remote rename pb paul
+  $ git remote
+  origin
+  paul
+  ~~~
+  ~~~ bash 
+  $ git remote rm paul
+  $ git remote
+  origin
+  ~~~
+* Clonar Con una conexion ssh `git clone git@github.com:JRichard-Prado/Git-GitHub.git git_test`
 
 
 * Utilizando Https `git clone https://github.com/JRichard-Prado/Git-GitHub.git`
-  - Ir al directorio destino
+- Ir al directorio destino
   ~~~ bash
   Prado@DESKTOP-72MFJHI MINGW64 ~/Desktop/Angular/Angular (main)
   $ cd C:/Users/Prado/Desktop
@@ -199,8 +235,6 @@ Date:   Sat Mar 16 12:16:22 2024 +0100
   git_github_tutorial.md  README.md
   ~~~
 
-
-
-
-`git remote -v show`
-## 
+## Traer y Combinar Remotos
+## Enviar a Tus Remotos
+- El comando para hacerlo es simple: git push `[nombre-remoto] [nombre-rama]`
