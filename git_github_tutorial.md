@@ -94,7 +94,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ~~~ 
 
-* **Pasar a Staging Area** `git add ejemplo.md` y revisar estado  
+* **Modificar y Pasar a Staging Area** `git add ejemplo.md` y revisar estado  
 ~~~
 $ git status -s
 A  ejemplo.md
@@ -134,7 +134,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
-* para ver toos los commit `git log --oneline` ó `git log`
+* **Historial de Confirmaciones todos los commit** `git log --oneline` ó `git log`
 ~~~bash
 36cd6f0 (HEAD -> main, origin/main) git log
 cabe7f8 status git inicial
@@ -170,7 +170,36 @@ Date:   Sat Mar 16 12:16:22 2024 +0100
 
 * Con una conexion ssh `git clone git@github.com:JRichard-Prado/Git-GitHub.git git_test`
 
+
 * Utilizando Https `git clone https://github.com/JRichard-Prado/Git-GitHub.git`
+  - Ir al directorio destino
+  ~~~ bash
+  Prado@DESKTOP-72MFJHI MINGW64 ~/Desktop/Angular/Angular (main)
+  $ cd C:/Users/Prado/Desktop
+
+  Prado@DESKTOP-72MFJHI MINGW64 ~/Desktop
+  ~~~
+  ~~~ bash
+  Prado@DESKTOP-72MFJHI MINGW64 ~/Desktop
+  $ git clone https://github.com/JRichard-Prado/Git-GitHub.git
+  Cloning into 'Git-GitHub'...
+  remote: Enumerating objects: 47, done.
+  remote: Counting objects: 100% (47/47), done.
+  remote: Compressing objects: 100% (31/31), done.
+  remote: Total 47 (delta 25), reused 33 (delta 14), pack-reused 0 (from 0)
+  Receiving objects: 100% (47/47), 7.37 KiB | 198.00 KiB/s, done.
+  Resolving deltas: 100% (25/25), done.
+  ~~~
+  ~~~ bash
+  Prado@DESKTOP-72MFJHI MINGW64 ~/Desktop
+  $ cd Git-GitHub/
+  ~~~
+  ~~~ bash
+  $ ls
+  git_github_tutorial.md  README.md
+  ~~~
+
+
 
 
 `git remote -v show`
