@@ -75,9 +75,9 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ~~~
 2. Si deseas empezar a controlar versiones de archivos existentes debes hacer una confirmación inicial `git add` y `git commit`
-## **Ejemplo:**  
+## **Ejemplo: markdown**  
 
-* Creamos un markdown `touch ejemplo.md` luego revisamos el estado 
+* **Creamos un archivo** markdown `touch ejemplo.md` luego revisamos el estado 
 ~~~ bash
 $ git status -s
 ?? ejemplo.md
@@ -94,7 +94,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ~~~ 
 
-* Pasar a **Staging Area** `git add ejemplo.md` y revisar estado  
+* **Pasar a Staging Area** `git add ejemplo.md` y revisar estado  
 ~~~
 $ git status -s
 A  ejemplo.md
@@ -110,11 +110,11 @@ Your branch is up to date with 'origin/main'.
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         new file:   ejemplo.md
-~~~  
-* guardar a **Git-Repository** `git commit -m 'ejemplo git'` y vericamos el estado  
+~~~ 
+* **Confirmar tus Cambios** guardar a **Git-Repository** `git commit -m 'texto descriptivo'` y vericamos el estado  
 ~~~bash
-$ git commit -m 'ejemplo git'
-[main 651f3a5] ejemplo git
+$ git commit -m 'Texto descriptivo: ejemplo git'
+[main 651f3a5] Texto descriptivo: ejemplo git
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 ejemplo.md
 
@@ -174,3 +174,4 @@ Date:   Sat Mar 16 12:16:22 2024 +0100
 
 
 `git remote -v show`
+## 
