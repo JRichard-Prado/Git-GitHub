@@ -186,10 +186,17 @@ Date:   Sat Mar 16 12:16:22 2024 +0100
     origin  https://github.com/JRichard-Prado/Git-GitHub.git (fetch)
     origin  https://github.com/JRichard-Prado/Git-GitHub.git (push)
     ~~~
-- **Añadir Repositorios** Remotos
+- **Añadir Repositorios** Remotos 
+
+    (pedira contraseña de usuario github)
 
   ~~~ bash
   git remote add origin https://github.com/JRichard-Prado/Angular.git
+  ~~~
+  Mediante llave ssh 
+  ~~~ bash 
+  Prado@DESKTOP-72MFJHI MINGW64 ~/Desktop/Angular/Angular (main)
+  $ git remote add origin git@github.com:JRichard-Prado/Angular.git
   ~~~
 - **Eliminar y Renombrar Remotos**
 
@@ -237,4 +244,23 @@ Date:   Sat Mar 16 12:16:22 2024 +0100
 
 ## Traer y Combinar Remotos
 ## Enviar a Tus Remotos
-- El comando para hacerlo es simple: git push `[nombre-remoto] [nombre-rama]`
+- El comando para hacerlo es simple: git push `[nombre-remoto] [nombre-rama]` verificar configuracion de remotos con `git remote -v show`
+  ~~~
+  Prado@DESKTOP-72MFJHI MINGW64 ~/Desktop/Angular/Angular (main)
+  $ git remote -v show
+  origin  git@github.com:JRichard-Prado/Angular.git (fetch)
+  origin  git@github.com:JRichard-Prado/Angular.git (push)
+  ~~~
+
+  ~~~ bash
+  $ git push origin main
+  Enumerating objects: 39, done.
+  Counting objects: 100% (39/39), done.
+  Delta compression using up to 2 threads
+  Compressing objects: 100% (37/37), done.
+  Writing objects: 100% (39/39), 125.50 KiB | 1.53 MiB/s, done.
+  Total 39 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+  remote: Resolving deltas: 100% (4/4), done.?[K
+  To github.com:JRichard-Prado/Angular.git
+  * [new branch]      main -> main
+  ~~~
